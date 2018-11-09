@@ -30,3 +30,21 @@
     transform: rotate(360deg);
   }
 }
+.abcnone {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-container {
+  flex: 1;
+}
+
+textarea.form-control {
+  height: 100%;
+  resize: none;
+}
+
+.preview-container {
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
