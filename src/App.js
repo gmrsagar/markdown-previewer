@@ -23,12 +23,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
-        <h1>Markdown Renderer</h1>
-      <SplitPane pane2Style={ previewStyle } split="vertical" defaultSize="50%">
-        <Editor text={this.state.mdInput} handleChange={this.handleChange}/>
-        <Preview text={this.state.mdInput}/>
-      </SplitPane>
+      <div>
+        <h1 className="app">Markdown Renderer</h1>
+        <SplitPane pane2Style={ previewStyle } split="vertical" defaultSize="50%">
+          <Editor text={this.state.mdInput} handleChange={this.handleChange}/>
+          <Preview text={this.state.mdInput}/>
+        </SplitPane>
       </div>
     );
   }
