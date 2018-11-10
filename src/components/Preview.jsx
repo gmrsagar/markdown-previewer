@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import marked from 'marked';
 
 class Preview extends Component {
-  state = {  }
 
   getMarkdownText = () => {
     let rawMarkup = marked(this.props.text, {sanitize: true})

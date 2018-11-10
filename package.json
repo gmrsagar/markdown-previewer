@@ -8,7 +8,8 @@
     "react-dom": "^16.6.1",
     "react-marked": "^0.3.1",
     "react-resizable": "^1.7.5",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "marked": "^0.3.5"
   },
   "scripts": {
     "start": "react-scripts start",
