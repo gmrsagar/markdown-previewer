@@ -10,9 +10,9 @@ class Preview extends Component {
 
   render() {
     return (
-      <div className="col-md-6">
-        <div className="p-4 m-2 preview-container" dangerouslySetInnerHTML={this.getMarkdownText() } id="preview"></div>
-      </div>
+      
+        <div className="p-4" dangerouslySetInnerHTML={this.getMarkdownText() } id="preview"></div>
+      
     );
   }
 }

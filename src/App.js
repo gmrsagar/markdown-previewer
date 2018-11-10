@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import Editor from './components/Editor';
 import Preview from './components/Preview';
 import './App.css';
+import SplitPane from 'react-split-pane';
+
+const previewStyle = {
+  overflowY: "scroll",
+  border: "1px solid #ced4da"
+}
 
 class App extends Component {
 
@@ -17,11 +23,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
-        <div className="row">
-          <Editor text={this.state.mdInput} handleChange={this.handleChange}/>
-          <Preview text={this.state.mdInput}/>
-        </div>
+      <div className="app">
+        <h1>Markdown Renderer</h1>
+      <SplitPane pane2Style={ previewStyle } split="vertical" defaultSize="50%">
+        <Editor text={this.state.mdInput} handleChange={this.handleChange}/>
+        <Preview text={this.state.mdInput}/>
+      </SplitPane>
       </div>
     );
   }
